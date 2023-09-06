@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Form
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1 class="form__title">Form Contact</h1>
+    <form class="form" action="https://formspree.io/f/xqkvbgpz" method="post">
+        <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
+        <input type="text" name="last" placeholder="Last Name" autocomplete="off" required>
+        <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+        <textarea rows="5" cols="60" name="message" placeholder="Text..." autocomplete="off" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+{% endblock %}

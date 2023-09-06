@@ -45,4 +45,12 @@ def blog():
     return render_template('blog.html', **context)
 
 
+@app.route('/form/')
+def form():
+    context = {
+        'active': 'form'
+    }
+    return render_template('form.html', **context)
+
+
 app.run(host='0.0.0.0', port=8080)
